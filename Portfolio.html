@@ -9,43 +9,58 @@
             color : red;
             font-size : 50px;
         }
-        table {
+        table,td 
+        {
+            background: #000; 
+            color: yellowgreen;
             margin top: 20px;
             margin bottom: 20px;
             margin left: 20px;
             margin right: 20px;
             text-align: center;
         }
-    
+    #heading {
+        color : blue;
+        text-align: center;
+    }
+    .para
+    {
+        text-align: center;
+
+    }
         </style>
 </head>
 <body>
+    <img src="https://www.dotlocalhost.com/wp-content/uploads/2021/11/cropped-final-01-e1637218750548.jpg" alt="Dot LocalHost" width="200px" height="200">
+    <form>
+    Username <input type="text"/>
+    <br>
+    Password <input type="password"/>
+    <br>
+    <button>Submit</button>
+    </form>
 <h1>My Portfolio</h1>
-<p>This is my Portfolio</p>
-<img src="" alt="google" width="500px" height="500">
+<p class="para">Web Developer</p>
 <h2>My Education</h2>
 <ol>
     <li>APS</li>
     <li>DA SKBZ</li>
     <li>Bahria University</li>
 </ol>
-<h2>Experience</h2>
+<h3 id="heading">Experience</h3>
 <table>
     <tr>
         <td>Company</td>
+        <td>Dot LocalHost</td>
     </tr>
     <tr>
         <td>Experience</td>
+        <td>3 years</td>
     </tr>
     <tr>
         <td>Project</td>
+        <td>My Portfolio</td>
     </tr>
 </table>
-<form>
-    Username <input type="text"/>
-<br>
-Password <input type="password"/>
-<br>
-</form>
 </body>
 </html>
