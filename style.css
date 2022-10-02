@@ -1,0 +1,20 @@
+.header
+{
+    text-align: center;
+}
+.body
+{
+    text-align: center;
+}
+.mytable
+{
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 1.9em;
+    width: 80%;
+    box-shadow: 20px;
+}
+.mytable thead tr
+{
+    background-color: aqua;
+}
