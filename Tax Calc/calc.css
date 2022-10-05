@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+   height: 100%;
+    
+    
+
+}
+.dropdown {
+display: none;
+position: absolute;
+z-index: 1;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 36px;
+  overflow: hidden;
+  background-color: black;
+}
+
+ul.topnav li {float: right;}
+
+ul.topnav li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+#bgimage {
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-image: url("bgimg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+button
+{
+    background-color:#04AA6D;
+} 
+div
+{
+  text-align: center;
+  
+}
+.tax-slab-accordion.active .accordion-minus {
+  display: flex;
+}
+.tax-slab-accordion-title img{
+  width: 15px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.accordion-minus{
+  display: none;
+}
+.tax-slab-accordion{
+    width: 100%;
+    background-color: RGB(239, 239, 238);
+    margin-bottom: 20px;
+    padding: 12px 0 12px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.contact-container{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-content-container{
+  width: 85%;
+    max-width: 1337px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-content-right input{
+    padding-left: 20px;
+    margin-top: 20px;
+    height: 52px;
+    width: 90%;
+    border: 2px solid rgba(174, 174, 174, 0.92);
+    outline: none;
+    border-radius: 5px;
+}
+.contact-content-left h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+padding-left: 30px;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white
+}
+.tax-links-documents {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.tax-links-container {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+  max-width: 1337px;
+}
+.section {
+  display: block;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
