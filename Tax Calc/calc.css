@@ -1,8 +1,6 @@
 body {
     margin: 0;
    height: 100%;
-   background-color: transparent;
-   justify-content: center;
    
   }
 
@@ -29,14 +27,7 @@ ul.topnav li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-#bgimage {
-    opacity: 0.2;
-    background-repeat: no-repeat;
-    background-image: url("bgimg.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-}
+
 button
 {
     background-color:#04AA6D;
@@ -49,8 +40,8 @@ div
 .tax-slab-accordion.active .accordion-minus {
   display: flex;
 }
-img {
-  width: 25px;
+.tax-slab-accordion-title img{
+  width: 15px;
   margin-right: 10px;
   display: inline-block;
 }
@@ -127,8 +118,9 @@ padding-left: 30px;
 }
 
 .active, .collapsible:hover {
-  background-color: grey;
+  background-color: #555;
 }
+
 
 .accordion
 {
@@ -143,6 +135,11 @@ margin: 10px 20px;
 position: relative;
 padding: 10px 20px;
 cursor: pointer;
+}
+img {
+  width: 25px;
+  margin-right: 10px;
+  display: inline-block;
 }
 .accordion .contentbx .label ::before {
   content: '+';
@@ -161,8 +158,8 @@ cursor: pointer;
     overflow-y: auto;
   }
   .accordion .contentbx.active .content{
-    height: 80px;
-  padding: 10px;
+    height: 50px;
+    padding: 10px;
   }
   .accordion .contentbx.active .label ::before {
   content: '-';

@@ -9,7 +9,7 @@
 
 
 <nav>
-    <div style="float: left; background-color: black;"><img src="calc.png"></div>
+    <div style="float: left; background-color: black;"><img  style="width: 114px;" src="calc.png"></div>
 <ul class="topnav">
   <li><a href="taxcalculator.html#home;">Calculator</a></li>
   <li><a href="taxcalculator.html#news;">Tax Slab</a></li>
@@ -114,9 +114,9 @@
     <div class="contentbx">
     <div class="label"><img src="plus.png">Salary income exceeds PKR 3.6 Million but is under PKR 6 Million</div>
     <div class="content"><img src="minus.png">
-        If the annual salary income does not exceed
+        <p>If the annual salary income does not exceed
             PKR. 600,000 then the rate of the income tax
-            is 0%
+            is 0%</p>
     </div>
 </div>
 </div>
@@ -143,12 +143,12 @@
 </div>
 <script>
     const accordion = document.getElementsByClassName ('contentbx');
-    for (i=0; i<accordion.length;i++){
+    for (i=0; i<accordion.length; i++){
         accordion[i].addEventListener('click',function(){
             this.classList.toggle('active')
         })
     }
-    <button class="calculatemonthly" id="Mcalc">Calculate</button>
+    
 </script>
 </body>
 <div class="footer">
