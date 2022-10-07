@@ -1,0 +1,36 @@
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.form-label 
+{
+color: white;
+margin: 0 15px;
+}
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(61,61,61);
+
+}
+.cal-box
+{
+padding: 20px 0 0 0;
+width: 400px;
+background: #292b2c;
+box-shadow: 0 0 12px black;
+}
+.btn-row
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+}
+.cBtn
+{
+
+}

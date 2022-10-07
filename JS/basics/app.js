@@ -1,5 +1,5 @@
 console.log("Welcome");
-let a =  'Student Score'
+let a =  'Monthly Tax';
 let html =  9
 let css =  10
 let js =  6

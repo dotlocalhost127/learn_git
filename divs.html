@@ -18,5 +18,23 @@
                     <option>12345</option>
                 </select>
             </div>
+            <div class="accordion">
+            <div class="contentbx">
+            <div class="label">Salary income is under PKR 600,000</div>
+            <div class="content">
+                <p>If the annual salary income does not exceed
+                    PKR. 600,000 then the rate of the income tax
+                    is 0%</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordion = document.getElementsByClassName ('contentbx');
+        for (i=0; i<accordion.length;i++){
+            accordion[i].addEventListener('click',function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
     </body>
 </html>

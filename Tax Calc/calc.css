@@ -1,10 +1,11 @@
 body {
     margin: 0;
    height: 100%;
-    
-    
+   background-color: transparent;
+   justify-content: center;
+   
+  }
 
-}
 .dropdown {
 display: none;
 position: absolute;
@@ -48,8 +49,8 @@ div
 .tax-slab-accordion.active .accordion-minus {
   display: flex;
 }
-.tax-slab-accordion-title img{
-  width: 15px;
+img {
+  width: 25px;
   margin-right: 10px;
   display: inline-block;
 }
@@ -113,6 +114,59 @@ padding-left: 30px;
 .section {
   display: block;
 }
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: grey;
+}
+
+.accordion
+{
+max-width: 800px;
+}
+.accordion .contentbx
+{
+position: relative;
+margin: 10px 20px;
+}
+.accordion .contentbx .label {
+position: relative;
+padding: 10px 20px;
+cursor: pointer;
+}
+.accordion .contentbx .label ::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 1.5em;
+  }
+  .accordion .contentbx .content{
+    position: relative;
+    padding: 0px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5%;
+    overflow-y: auto;
+  }
+  .accordion .contentbx.active .content{
+    height: 80px;
+  padding: 10px;
+  }
+  .accordion .contentbx.active .label ::before {
+  content: '-';
+  }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
