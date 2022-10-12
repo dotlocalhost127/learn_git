@@ -1,0 +1,10 @@
+git clone paste link
+git status
+git add .
+git commit -m
+git push $git 
+
+
+
+Create a function for quadratic equation
+

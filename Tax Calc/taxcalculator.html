@@ -5,9 +5,6 @@
     
 </head>
 <body>
-
-
-
 <nav>
     <div style="float: left; background-color: black;"><img  style="width: 114px;" src="calc.png"></div>
 <ul class="topnav">
@@ -28,26 +25,26 @@
                         presented by Government Of Pakistan.
                     </p>
                     <div style="width:50%; float: left; text-align: center;">
-                        <input type="text" name="amount" id="amount" placeholder="Enter Amount Here">
-                        <select id="salary-selection">
-                            <option>Monthly</option>
-                            <option>Anually</option>
+                        <input type="text" name="amount" id="salary" placeholder="Enter Amount Here">
+                        <select id="duration">
+                            <option>Duration</option>
+                            <option>Monthly/Annualy</option>
+                    
                         </select>
-                        <button>Calculate</button>
+                        <button id="calculate">Calculate</button>
                     </div>
+                    
                     <div style="width:50%; float:right; margin: 0 auto; text-align: center;">
-                        <input type="text" name="amount" id="amount" placeholder="Enter Amount Here">
+                        <input type="text" name="amount" id="zamount" placeholder="Enter Amount Here">
                         <select >
                             <option>Zakat</option>
-                            <option>Education</option>
-                            <option>Profit on Debt</option>
                         </select>
-                        <button>Calculate</button>
-                    </div>
+                        <button id="zcalculate">Calculate</button>
+                        </div>
         </div>
     </div>
 
-
+    
     
 
 <section>
@@ -67,6 +64,8 @@
                 <a href="#">Download</a>
             </div>
 </section>
+<output style = "background-color: orange; width: 30%; height:30%; align-content: center;" id="display"></output>
+    <output style = "background-color: green; width: 30%; height:30%; align-content: center;" id="zdisplay"></output>
 <div id="news;">
     <h1>Salary Tax Slabs According to Budget 2022-23</h1>
     <div class="accordion">
@@ -141,15 +140,7 @@
     <h3>About Us</h3>
     <p>We develop high-quality websites, apps and desktop apps. We also provide Cloud and DevOps support for your software/company. Our aim is to bring your software concept from development to cloud. We are fully agile so we present your software and take feedback from you regularly. We provide best after service support to our clients.</p>
 </div>
-<script>
-    const accordion = document.getElementsByClassName ('contentbx');
-    for (i=0; i<accordion.length; i++){
-        accordion[i].addEventListener('click',function(){
-            this.classList.toggle('active')
-        })
-    }
-    
-</script>
+<script src="taxcalc.js"></script>
 </body>
 <div class="footer">
     <div class="footer-social-links">
@@ -161,3 +152,4 @@
     </p>
 </div>    
 </html>
+
