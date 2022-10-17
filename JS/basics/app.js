@@ -1,3 +1,4 @@
+// Sir Zain Class 1
 // console.log("Welcome");
 // let a =  'Student Score'
 // let html =  9
@@ -6,97 +7,42 @@
 // let totalscore = html+css+js;
 // console.log('Total Score is ' + totalscore)
 
+// Sir Zain Class 2
+// console.log ("1")
+// // Function Defination
+// function nameoffunction () {
+//     console.log ("2 - my first function")
+// }
+// console.log ("3")
+// //call this function
+// nameoffunction();
 
-console.log ("1")
-// Function Defination
-function nameoffunction () {
-    console.log ("2 - my first function")
-}
-console.log ("3")
-//call this function
-nameoffunction();
+// function mySumCalc (a,b,c)
+// {
+//    let sum = a+2*b+5*c;
+//    return sum;
+// }
 
-function mySumCalc (a,b,c)
+// let resultSum = mySumCalc (5,1,2);
+// console.log("Your Result is " + resultSum);
+
+// Sir Zain Class 3
+let a = 2;
+let b = 4;
+let c = 5;
+function myfunc (a,b,c)
 {
-   let sum = a+2*b+5*c;
-   return sum;
+    // try{
+    //     console.log (z);
+    // }
+    // catch(err){ 
+    //     console.log("Some Error Occured " + err);
+    // }
+    // finally {
+    //     return a+b;
+    // }
+return Math.pow (a,b,c);
+
 }
 
-let resultSum = mySumCalc (5,1,2);
-console.log("Your Result is " + resultSum);
-
-const monthly = 0;
-const anually = 0;
-const userinput = 0;
-const calculate = 0;
-
-
-monthly.addEventListener("click" , ()=> {
-
-    if (userinput > 50000 || userinput < 100000) 
-    {
-        result = userinput * 0.025;
-    }
-    else if (userinput > 100000 || userinput < 200000) 
-    {
-        result = userinput * 0.125;
-    }
-    else if (userinput > 200000 || userinput < 300000 ) 
-    {
-        result = userinput * 0.2;
-    }
-
-    else if (userinput > 300000 || userinput < 500000 ) 
-    {
-        result = userinput * 0.25;
-        
-    }
-    
-    else if (userinput > 500000 || userinput < 1000000 ) 
-    {
-        result = userinput * 0.325;
-    }
-    
-    else if (userinput > 1000000) 
-    {
-        result = userinput * 0.35;
-        
-    }
-});
-
-anually.addEventListener("click" , ()=> {
-
-    if (userinput > 50000 || userinput < 100000) 
-    {
-        result = userinput * 0.025;
-    }
-    else if (userinput > 100000 || userinput < 200000) 
-    {
-        result = userinput * 0.125;
-    }
-    else if (userinput > 200000 || userinput < 300000 ) 
-    {
-        result = userinput * 0.2;
-    }
-
-    else if (userinput > 300000 || userinput < 500000 ) 
-    {
-        result = userinput * 0.25;
-        
-    }
-    
-    else if (userinput > 500000 || userinput < 1000000 ) 
-    {
-        result = userinput * 0.325;
-    }
-    
-    else if (userinput > 1000000) 
-    {
-        result = userinput * 0.35;
-        
-    }
-});
-
-
-
-
+console.log ('Sum of ' + a + ' and ' + b + ' is ' + myfunc, Math.pow (a,2),(b,2),(c,2));
