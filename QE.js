@@ -1,38 +1,11 @@
-// program to solve quadratic equation
-let root1, root2;
+var a = prompt("Enter value of a");
+var b = prompt("Enter value of b");
+var c = prompt("Enter value of c");
 
-// take input from the user
-let a = prompt("Enter the first number: ");
-let b = prompt("Enter the second number: ");
-let c = prompt("Enter the third number: ");
+var root_part = Math.sqrt(b*b-4*a*c);
+var denom = 2*a;
+var final_answer1 = (-b+root_part)/denom;
+var final_answer2 = (-b-root_part)/denom;
 
-// calculate discriminant
-let discriminant = b * b - 4 * a * c;
-
-// condition for real and different roots
-if (discriminant > 0) {
-    root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
-    root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
-
-    // result
-    console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
-}
-
-// condition for real and equal roots
-else if (discriminant == 0) {
-    root1 = root2 = -b / (2 * a);
-
-    // result
-    console.log(`The roots of quadratic equation are ${root1} and ${root2}`);
-}
-
-// if roots are not real
-else {
-    let realPart = (-b / (2 * a)).toFixed(2);
-    let imagPart = (Math.sqrt(-discriminant) / (2 * a)).toFixed(2);
-
-    // result
-    console.log(
-    `The roots of quadratic equation are ${realPart} + ${imagPart}i and ${realPart} - ${imagPart}i`
-  );
-}
+document.write ("Root 1 is " + final_answer1 +"<br/>");
+document.write ("Root 2 is " + final_answer2 +"<br/>");
