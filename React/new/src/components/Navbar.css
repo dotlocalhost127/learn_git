@@ -1,0 +1,30 @@
+.navbar{
+    background-color: #404258;
+    color: #fff;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.navLinks a {
+color: #fff;
+text-decoration: none;
+font-size: 1.2rem;
+font-weight: 500;
+}
+
+.logo
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+

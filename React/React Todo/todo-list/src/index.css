@@ -5,6 +5,53 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 50px;
+  background-color: #66CCFF;
+}
+
+.TodolistMain .header input
+{
+padding: 10px;
+font-size: 16px;
+border: 2px solid white;
+width: 100%;
+border-radius: 5px;
+}
+.TodolistMain .header button
+{
+padding: 10px;
+font-size: 16px;
+margin: 10px;
+background-color: #0066ff;
+color:white;
+border: 2px solid #0066ff;
+border-radius: 5px;
+}
+.TodolistMain .header button:hover
+{
+border:#003399 2px solid;
+background-color: #003399;
+cursor: pointer;
+}
+
+.TodolistMain .taskslist
+{
+  color:#333;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  list-style: none;
+}
+.TodolistMain .taskslist li
+{
+  padding: 15px;
+
+transition: 2s ease-out;
+}
+.TodolistMain .taskslist li:hover
+{
+  background-color: bisque;
+  cursor: pointer;
 }
 
 code {
